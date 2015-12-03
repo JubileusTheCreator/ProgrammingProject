@@ -1,2 +1,2 @@
-# ProgrammingProject
-Project for Informatic class 
+# Project: Isometric Adventure
+An Epic Journey through polygonal landscapes
