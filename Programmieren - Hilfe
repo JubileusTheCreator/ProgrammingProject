@@ -1,0 +1,13 @@
+Bitte stellt hier alles rein, was uns beim Programmieren helfen kann!
+
+PythonAPI - Blog: http://blenderscripting.blogspot.de/2012/03/importing-obj.html
+          - Wiki: https://www.blender.org/api/blender_python_api_2_70_release/info_overview.html
+
+		  
+Ich empfehle PyCharm als IDE für das Projekt.
+https://www.jetbrains.com/pycharm/
+
+Um in PyCharm auch die auto-complete Funktion nutzen zu können, muss man die verschiedenen Blender Game Engine
+Module zu der Python Library hinzufügen. Ich habe die Module schonmal runtergeladen und probiere es demnächst
+mal aus...
+
