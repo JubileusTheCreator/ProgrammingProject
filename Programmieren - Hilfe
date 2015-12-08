@@ -11,3 +11,6 @@ Um in PyCharm auch die auto-complete Funktion nutzen zu können, muss man die ver
 Module zu der Python Library hinzufügen. Ich habe die Module schonmal runtergeladen und probiere es demnächst
 mal aus...
 
+Die KX_GameObject Dokumentation:
+http://www.blender.org/api/247PythonDoc/GE/KX_GameObject.KX_GameObject-class.html
+
