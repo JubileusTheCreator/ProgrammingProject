@@ -22,6 +22,7 @@ Szene:
 Physik:
   Bewegung: http://download.blender.org/documentation/NaN_docs/BlenderGameReference/actuators.html
             http://www.tutorialsforblender3d.com/BGE_Python/Actuators/Motion/MotionActuator_Physics_dRot.html
+  Steuerung: http://www.blender.org/api/blender_python_api_2_60a_release/bge.types.html#bge.types.SCA_KeyboardSensor
 
 Python-API:
 
