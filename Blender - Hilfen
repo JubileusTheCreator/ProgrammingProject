@@ -21,6 +21,7 @@ Szene:
 
 Physik:
   Bewegung: http://download.blender.org/documentation/NaN_docs/BlenderGameReference/actuators.html
+            http://www.tutorialsforblender3d.com/BGE_Python/Actuators/Motion/MotionActuator_Physics_dRot.html
 
 Python-API:
 
