@@ -39,3 +39,39 @@ def main():
         player.localPosition.z +=0.005
 
 main()
+
+
+
+neue Version: (man kann nicht mehr unendlich hochspringen)
+
+import bge
+
+def main():
+
+    cont=bge.logic.getCurrentController()
+    player = cont.owner
+
+    #get the scene for mouse and other things
+
+    scene = bge.logic.getCurrentScene()
+
+    #get a keyboard
+    keyboard = bge.logic.keyboard
+    #check for a keyboard event and a specific key
+
+    #now check keyboard input (input status)
+    if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.UPARROWKEY]:
+        player.localPosition.y += 0.1
+        
+    if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.DOWNARROWKEY]:
+        player.localPosition.y -= 0.1
+        
+    if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.RIGHTARROWKEY]:
+        player.localPosition.x += 0.1
+        
+    if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.LEFTARROWKEY]:
+        player.localPosition.x -= 0.1
+        
+    if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.SPACEKEY]:
+        player.localPosition.z += 0.1
+main()
