@@ -42,7 +42,7 @@ main()
 
 
 
-neue Version: (man kann nicht mehr unendlich hochspringen)
+neue Version: (man kann nicht mehr unendlich hoch springen)
 
 import bge
 
