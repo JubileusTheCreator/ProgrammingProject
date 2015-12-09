@@ -1,3 +1,8 @@
+# alternative zur charakterbewegung: Boden Bewegt sich unter dem Objekt weg, sieht in der Sspäteren Ansicht genauso aus.
+im code müssen dazu nur die Variablen invertiert werden und das script mit dem Boden statt mit der Figur verlinkt werden.
+(läuft nicht so stabil wie die Charakterbewegung)
+
+
 import bge
 
 def main():
@@ -9,25 +14,27 @@ def main():
 
     scene = bge.logic.getCurrentScene()
     camera = scene.objects["Camera"]
-    camera.setParent("Player") 
-
+    camera.setParent("Player")
     #get a keyboard
     keyboard = bge.logic.keyboard
     #check for a keyboard event and a specific key
 
     #now check keyboard input (input status)
     if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.UPARROWKEY]:
-        player.localPosition.y += 0.1
-
-    if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.DOWNARROWKEY]:
         player.localPosition.y -= 0.1
 
+    if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.DOWNARROWKEY]:
+        player.localPosition.y += 0.1 #Bewegung nach hinten
+
     if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.RIGHTARROWKEY]:
-        player.localPosition.x += 0.1
+        player.localPosition.x -= 0.1 #Bewegung nach rechts
 
     if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.LEFTARROWKEY]:
-        player.localPosition.x -= 0.1
-
+        player.localPosition.x += 0.1 #Bewegung nach links
+        player.applyRotation([0,0,0], True)
     if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.SPACEKEY]:
-        player.localPosition.z += 0.1
+        player.localPosition.z += 0.1 #Bewegung nach oben (Springen)
+        
+    
+        
 main()
