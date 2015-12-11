@@ -1,3 +1,6 @@
+"""ALTE STEUERUNG"""
+
+
 #Ipmport der Blender Game Engine in die Python API
 import bge
 import time

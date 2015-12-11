@@ -1,3 +1,5 @@
+"""TEST KARL"""
+
 from bge import *
 
 controller = logic.getCurrentController()
