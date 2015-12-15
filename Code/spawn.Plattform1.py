@@ -5,7 +5,7 @@ def Spawn():
     contP = bge.logic.getCurrentController()
     scene = bge.logic.getCurrentScene()
     Szene = scene.name
-    Plattform1 = scene.objects["Plattform 1"]
+    Plattform1 = scene.objects["Plattform1"]
     Plattform1 = contP.owner
     if Szene == "Modul1":
         Spawnpoint = 1

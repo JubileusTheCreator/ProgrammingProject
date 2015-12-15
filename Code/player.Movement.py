@@ -48,8 +48,8 @@ def move():
         if Jump == 1:
             player.worldPosition.z += 1.0
         #if Reset == 1:
-            #player.worldPosition = [1.5,-12,0]
+            #player.worldPosition = [1.4,-7,0]
         if player.worldPosition.z <-10:
-            player.worldPosition = [1.5,-12,0]
+            player.worldPosition = [1.4,-7,0]
 
 move()
