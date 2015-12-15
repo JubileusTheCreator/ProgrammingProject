@@ -5,13 +5,13 @@ def Spawn():
     contP = bge.logic.getCurrentController()
     scene = bge.logic.getCurrentScene()
     Szene = scene.name
-    playerP = scene.objects["player"]
+    keyP = scene.objects["Key"]
     if Szene == "Modul1":
         Spawnpoint = 1
-    playerP = contP.owner
+    keyP = contP.owner
     while Spawnpoint == 1:
         print ("Ja")
-        playerP.worldPosition = [1.4,-7,0]
+        keyP.worldPosition = [2,4,0]
         Spawnpoint += 0.5
         break
 
