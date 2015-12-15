@@ -3,7 +3,6 @@ An Epic Journey through polygonal landscapes
 
 Copyright by: 
 Steven Serra Mock //
-Jan Rehbein //
-Karl Möller
+Jan Rehbein
 
  ©2015  SerraMockARTs
