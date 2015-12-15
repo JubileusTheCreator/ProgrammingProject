@@ -29,7 +29,7 @@ def move():
     Up = keyboard.events[bge.events.UPARROWKEY]
     Down = keyboard.events[bge.events.DOWNARROWKEY]
     Jump = keyboard.events[bge.events.SPACEKEY]
-    #Reset = keyboard.events[bge.events.BKEY]
+    Reset = keyboard.events[bge.events.BKEY]
 
 #Code für die eigentliche Bewegung
 #Dieser Block wird erst dann ausgeführt, wenn eine Taste gedrückt wird.
@@ -49,7 +49,7 @@ def move():
             player.worldPosition.z += 1.0
         #if Reset == 1:
             #player.worldPosition = [1.5,-12,0]
-# Wenn der Spieler runterfällt, wird er zurückgesetzt
         if player.worldPosition.z <-10:
             player.worldPosition = [1.5,-12,0]
+
 move()

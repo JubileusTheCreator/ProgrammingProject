@@ -1,8 +1,33 @@
+# Import der Blender Game Engine Bibliothek
 import bge
+import time
+# Erstellen einer Tastatur
 keyboard = bge.logic.keyboard
 
+# !!!Definieren der Spawnfunktion!!!
+# ------------------------------------------------------------------------------------------------------
+"""def Spawn():
+    contP = bge.logic.getCurrentController()
+    scene = bge.logic.getCurrentScene()
+    Szene = scene.name
+    #Obj = scene.objects
+    #print (Obj)
+    Kamera = scene.objects["Camera"]
+    playerP = scene.objects["player"]
+    Plattform1 = scene.objects["Plattform 1"]
+    Plattform1 = contP.owner
+    if Szene == "Modul1":
+        Spawnpoint = 1
+    playerP = contP.owner
+    while Spawnpoint == 1:
+        Plattform1.worldPosition = [0, 0, 0]
+        playerP.worldPosition = [0,0,0]
+        Spawnpoint += 0.5
+        break"""
 
-def move():
+# !!!Definieren der Bewegungsfunktion!!!
+# ------------------------------------------------------------------------------------------------------
+def Move():
 # Szene (LevelModul) laden
     scene = bge.logic.getCurrentScene()
 
@@ -29,7 +54,6 @@ def move():
     Up = keyboard.events[bge.events.UPARROWKEY]
     Down = keyboard.events[bge.events.DOWNARROWKEY]
     Jump = keyboard.events[bge.events.SPACEKEY]
-    #Reset = keyboard.events[bge.events.BKEY]
 
 #Code für die eigentliche Bewegung
 #Dieser Block wird erst dann ausgeführt, wenn eine Taste gedrückt wird.
@@ -47,9 +71,9 @@ def move():
             player.worldPosition.x += 0.1
         if Jump == 1:
             player.worldPosition.z += 1.0
-        #if Reset == 1:
-            #player.worldPosition = [1.5,-12,0]
-# Wenn der Spieler runterfällt, wird er zurückgesetzt
-        if player.worldPosition.z <-10:
-            player.worldPosition = [1.5,-12,0]
-move()
+
+
+# -------------------------------------------------------------------------------------------------------
+
+"""Spawn()"""
+Move()
