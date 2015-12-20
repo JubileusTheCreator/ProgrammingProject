@@ -1,0 +1,19 @@
+import bge                  #blender game engine importieren
+
+def main():
+    cont = bge.logic.getCurrentController()     
+    healthbar = cont.owner
+    keyboard = bge.logic.keyboard
+    
+   
+    if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.SPACEKEY]:
+        
+        healthbar.playAction("Energie", healthbar["StartFrame"] , healthbar ["EndFrame"], play_mode = bge.logic.KX_ACTION_MODE_PLAY, speed = 1) #Animation abspielen, start & endframe festlegen, abspielgeschwindigkeit festlegen
+        healthbar ["StartFrame"] = healthbar ["EndFrame"] #den neuen StartFrame gleich dem alten EndFrame setzen
+        healthbar ["EndFrame"] +=1 # den alten EndFrame um 1 erhöhen
+        healthbar ["Leben"] -=1 #Lebens variable um 1 verringern
+        if healthbar ["Leben"] ==1:
+            print ("verloren")
+            
+        
+main()
